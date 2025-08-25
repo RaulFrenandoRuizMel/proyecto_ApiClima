@@ -30,6 +30,7 @@ h3 {
     margin-bottom: 2%;
     margin-left: 20%;
     border-radius: 10px;
+    display: none;
 }
 
 .Contenedor_mapa
@@ -104,4 +105,21 @@ body
 .icono_cerrartarjeta
 {
     float: right;
+}
+
+#consultasPredefinidas
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    display: none;
+}
+
+#cerrarPredefinidos
+{
+    float: left;
+    width: 20px;
 }

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/inputs.css">
+    <link rel="stylesheet" href="../PaginaClima/css/styles.css">
+    <link rel="stylesheet" href="../PaginaClima/css/header.css">
+    <link rel="stylesheet" href="../PaginaClima/css/footer.css">
+    <link rel="stylesheet" href="../PaginaClima/css/inputs.css">
 </head>
 <body>
     <header id="header" class="header">
@@ -18,7 +18,7 @@
             <input type="text" id="campo_longitud" placeholder="Ingrese Longitus/Ej=-106.38" name="" id="">
         </div>
         <button onclick="ConsultarTemperatura()">Consultar</button>
-        <button>Predefinidos</button>
+        <button onclick="AbrirPredefinidos()">Predefinidos</button>
         <div class="blanco"></div>
 
     </header>
@@ -29,7 +29,7 @@
         <div id="ContenedorTarjetasClima">
             <div class="ContenedorTemp">
                 <div>
-                    <img onclick="" src="../img/439220.png" class="icono_cerrartarjeta"/>
+                    <img onclick="" src="../PaginaClima/img/439220.png" class="icono_cerrartarjeta"/>
 
                     <div class="lugar">
                         <div class="nombre_zona"><h1>Ciudad Juarez</h1></div>
@@ -50,6 +50,15 @@
                 </div> 
             </div>
         </div>
+        <div id="consultasPredefinidas">
+            <button onclick="ConsultarPredefinido(31.7420, -106.4337)"> <p>Ciudad Juarez, México</p></button>
+            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Diego de Almagro, Chile</p></button>
+            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Bogota, Colombia</p></button>
+            <button onclick="ConsultarPredefinido(, -69.6263)"> <p>Senenovkoke, Rusia</p></button>
+            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Diego de Almagro, Chile</p></button>
+            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Diego de Almagro, Chile</p></button>
+            <img onclick="CerrarPredefinidos()" src="img/439220.png" id="cerrarPredefinidos" alt="">
+        </div>
     </main>
     <footer>
 
@@ -57,5 +66,5 @@
 
 
 </body>
-<script src="/scripts/script.js"></script>
+<script src="../PaginaClima/scripts/script.js"></script>
 </html>
