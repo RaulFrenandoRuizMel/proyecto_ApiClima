@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+p {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    font-family: fuentePokemon;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.ContenedorTemp
+{
+    float: left;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+.Contenedor_mapa
+{
+    float: left;
+    width: 60%;
+    height: 60vh;
+    background-color: aqua;
+    margin-bottom: 2%;
+    margin-left: 20%;
+}
+
+.icono_cerrartarjeta
+{
+    float: left;
+    width: 2%;
+    margin: 1%;
+}
+
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.lugar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pais
+{
+    margin-left: 15%;
+}
+
+.nombre_zona
+{
+    margin-left: 15%;
+}
+
+.datos_climaticos
+{
+    float: left;
+    background-color: rgb(15, 51, 83);
+    width: 50%;
+    margin: 2%;
+    border-radius: 5px;
+}
+
+.datos_climaticos>div
+{
+    margin: 5%;
+}
+
+.descriptivo
+{
+    float: right;
+    background-color: rgb(16, 86, 148);
+    width: 42%;
+    height: 100%;
+    margin: 2%;
+
+}
+.icono_cerrartarjeta
+{
+    float: right;
+}

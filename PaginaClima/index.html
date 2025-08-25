@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/inputs.css">
+</head>
+<body>
+    <header id="header" class="header">
+         <div id="inputs" class="inputs">
+                
+            <input type="text" id="campo_latitud" placeholder="                         Ingrese latitud/Ej=31.63" name="" id="">
+                
+            <input type="text" id="campo_longitud" placeholder="Ingrese Longitus/Ej=-106.38" name="" id="">
+        </div>
+        <button onclick="ConsultarTemperatura()">Consultar</button>
+        <button>Predefinidos</button>
+        <div class="blanco"></div>
+
+    </header>
+    <main>
+        <div id="Contenedor_mapa" class="Contenedor_mapa">
+
+        </div>
+        <div id="ContenedorTarjetasClima">
+            <div class="ContenedorTemp">
+                <div>
+                    <img onclick="" src="../img/439220.png" class="icono_cerrartarjeta"/>
+
+                    <div class="lugar">
+                        <div class="nombre_zona"><h1>Ciudad Juarez</h1></div>
+                        <div class="pais"><h1>MX</h1></div>
+                    </div>
+                    <div class="datos_climaticos">
+                        <div class="temperatura"><p>40°C</p></div>
+                        <div class="Sens_Term"><p>Sensacion Termica</p></div>
+                        <div class="humedad"><p>Humedad: 18%</p></div>
+                        <div class="viento"><p>Viento: 8.58 km/h</p></div>
+                        <div class="presion_atmosferica"><p>Presion atmosferica: 1020 hPa</p></div>
+                    </div>
+                    <div class="descriptivo">
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" class="icono_clima" />
+                        <div class="descripcion">Descripcion: Pocas Nubes</div>
+
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+<script src="/scripts/script.js"></script>
+</html>
