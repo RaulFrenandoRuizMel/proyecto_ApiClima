@@ -1,5 +1,4 @@
-
-.header
+header
 {
     position: relative;
     display: flex;
@@ -9,6 +8,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+}
+
+header>button:hover
+{
+    background-color: rgb(163, 163, 163);
+    transition: .3s;
+    color: aliceblue;
 }
 
 .blanco

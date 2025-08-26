@@ -15,11 +15,24 @@ h1 {
 }
 
 h2 {
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 h3 {
     font-size: 1.2em;
+}
+
+main {
+  flex: 1;/*empuja el footer hacia abajo*/
+}
+
+
+#footer
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(9, 2, 65);
+    position: sticky;
 }
 
 .ContenedorTemp
@@ -55,11 +68,12 @@ body
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     background-color: #f2f2f2;
-    display: inline-block;
-    height: auto;
     width: 100%;
     overflow-x: hidden;
-    
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;     
+    height: 100%;
 }
 
 .lugar
@@ -77,6 +91,7 @@ body
 .nombre_zona
 {
     margin-left: 15%;
+    width: 15%;
 }
 
 .datos_climaticos
@@ -93,33 +108,78 @@ body
     margin: 5%;
 }
 
+.temperatura h2
+{
+    color: #f2f2f2
+    
+}
 .descriptivo
 {
     float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(16, 86, 148);
     width: 42%;
     height: 100%;
     margin: 2%;
-
+    border-radius: 5px;
 }
+
+.descriptivo > img
+{
+    width: 50%;
+}
+
+
 .icono_cerrartarjeta
 {
     float: right;
+    cursor: pointer;
+}
+
+.icono_cerrartarjeta:hover
+{
+    transition: 0.3s;
+    filter: brightness(70%);
 }
 
 #consultasPredefinidas
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: aliceblue;
+    position:absolute;
+    top: 150px;
+    left: 15%;
+    width: 70%;
+    height: 70vh;
+    background-color: rgb(52, 82, 128);
     display: none;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#consultasPredefinidas>button:hover 
+{
+    background-color: rgb(163, 163, 163);
+    transition: .3s;
+    color: aliceblue;
+}
+
+#consultasPredefinidas>button:hover p
+{
+    transition: .3s;
+    color: aliceblue;
 }
 
 #cerrarPredefinidos
 {
-    float: left;
-    width: 20px;
+    float: right;
+    width: 30px;
+    cursor: pointer;
+}
+
+#cerrarPredefinidos:hover
+{
+    filter: brightness(70%);
+    transition: 0.3s;
 }

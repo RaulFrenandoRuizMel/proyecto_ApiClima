@@ -23,7 +23,7 @@
     width: 40%;
     height: 30%;
     border-radius: 30px;
-        margin: 5px;
+    margin: 5px;
 
 }
 
@@ -34,4 +34,20 @@ button
     width: 7%;
     margin: 10px;
     z-index: 1;
+    cursor: pointer;
+}
+
+#consultasPredefinidas > button
+{
+    float: left;
+    border-radius: 10px;
+    height: 20%;
+    width: 17%;
+    margin: 10px;
+    color: black;
+}
+
+#consultasPredefinidas > button > p
+{
+    color: black;
 }

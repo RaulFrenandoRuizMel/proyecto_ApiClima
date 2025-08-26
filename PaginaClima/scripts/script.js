@@ -40,19 +40,19 @@ function ConsultarTemperatura()
                 siglas_pais.innerHTML = "<h1>" + clima.sys.country + "</h1>";
         
                 const temperatura = clonTemp.querySelector(".temperatura");
-                temperatura.innerHTML = "<p>" + clima.main.temp + "°C" + "</p>" ;
+                temperatura.innerHTML = "<h2>" + clima.main.temp + "°C" + "</h2>" ;
         
                 const sensacion_termica = clonTemp.querySelector(".Sens_Term");
                 sensacion_termica.innerHTML ="<p>" + "sensacion Termica: " + clima.main.feels_like + "°C"+ "</p>";
         
                 const humedad = clonTemp.querySelector(".humedad");
-                humedad.innerHTML ="<p>" + "Humedad" + clima.main.humidity + "%"+ "</p>";
+                humedad.innerHTML ="<p>" + "Humedad: " + clima.main.humidity + "%"+ "</p>";
         
                 const viento = clonTemp.querySelector(".viento");
-                viento.innerHTML ="<p>" + "Viento: a " + clima.wind.speed * 3.6 + "km/h"+ "</p>";
+                viento.innerHTML ="<p>" + "Viento a: " + clima.wind.speed * 3.6 + " km/h"+ "</p>";
         
                 const presion_atmosferica = clonTemp.querySelector(".presion_atmosferica");
-                presion_atmosferica.innerHTML ="<p>" + "Presion Atmosferica " + clima.main.pressure + "hPa"+ "</p>";
+                presion_atmosferica.innerHTML ="<p>" + "Presion Atmosferica: " + clima.main.pressure + " hPa"+ "</p>";
         
                 const descripcion = clonTemp.querySelector(".descripcion");
                 descripcion.innerHTML = "<p>" +"Descripcion: " + clima.weather[0].description + "</p>";
@@ -62,7 +62,7 @@ function ConsultarTemperatura()
                     clonTemp.remove();
                 });
                 const icono_clima = clonTemp.querySelector(".icono_clima");
-                icono_clima.src = "https://openweathermap.org/img/wn/" + clima.weather[0].icono + "@4x.png"
+                icono_clima.src = "https://openweathermap.org/img/wn/" + clima.weather[0].icon + "@4x.png"
             }
             else
             {

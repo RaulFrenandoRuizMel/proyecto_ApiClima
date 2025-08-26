@@ -17,15 +17,12 @@
                 
             <input type="text" id="campo_longitud" placeholder="Ingrese Longitus/Ej=-106.38" name="" id="">
         </div>
-        <button onclick="ConsultarTemperatura()">Consultar</button>
-        <button onclick="AbrirPredefinidos()">Predefinidos</button>
+        <button class="boton_consulta" onclick="ConsultarTemperatura()">Consultar</button>
+        <button class="boton_predefinido" onclick="AbrirPredefinidos()">Predefinidos</button>
         <div class="blanco"></div>
 
     </header>
     <main>
-        <div id="Contenedor_mapa" class="Contenedor_mapa">
-
-        </div>
         <div id="ContenedorTarjetasClima">
             <div class="ContenedorTemp">
                 <div>
@@ -51,16 +48,31 @@
             </div>
         </div>
         <div id="consultasPredefinidas">
-            <button onclick="ConsultarPredefinido(31.7420, -106.4337)"> <p>Ciudad Juarez, México</p></button>
-            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Diego de Almagro, Chile</p></button>
-            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Bogota, Colombia</p></button>
-            <button onclick="ConsultarPredefinido(, -69.6263)"> <p>Senenovkoke, Rusia</p></button>
-            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Diego de Almagro, Chile</p></button>
-            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Diego de Almagro, Chile</p></button>
             <img onclick="CerrarPredefinidos()" src="img/439220.png" id="cerrarPredefinidos" alt="">
+            <button onclick="ConsultarPredefinido(31.742107831558844, -106.43290889073309)"> <p>Ciudad Juarez, México</p></button>
+            <button onclick="ConsultarPredefinido(-26.2464, -69.6263)"> <p>Diego de Almagro, Chile</p></button>
+            <button onclick="ConsultarPredefinido(-34.6037, -58.3816)"> <p>San Nicolas, Argentina</p></button>
+            <button onclick="ConsultarPredefinido(-15.8267, -47.9218)"> <p>Brasilia, Brasil</p></button>
+            <button onclick="ConsultarPredefinido(-33.4489, -70.6693)"> <p>Barrio Brazil, Chile</p></button>
+            <button onclick="ConsultarPredefinido(-12.0464, -77.0428)"> <p>Rímac, Perú</p></button>
+            <button onclick="ConsultarPredefinido(4.7110, -74.0721)"> <p>Santa Barbara Central, Colombia</p></button>
+            <button onclick="ConsultarPredefinido(10.4806, -66.9036)"> <p>Caracas, Venezuela</p></button>
+            <button onclick="ConsultarPredefinido(19.4326, -99.1332)"> <p>Ciudad de México, México</p></button>
+            <button onclick="ConsultarPredefinido(18.4861, -69.9312)"> <p>Santo Domingo, República Dominicana</p></button>
+            <button onclick="ConsultarPredefinido(14.6349, -90.5069)"> <p>Ciudad de Guatemala, Guatemala</p></button>
+            <button onclick="ConsultarPredefinido(9.9281, -84.0907)"> <p>San José, Costa Rica</p></button>
+            <button onclick="ConsultarPredefinido(48.8566, 2.3522)"> <p>París, Francia</p></button>
+            <button onclick="ConsultarPredefinido(40.4168, -3.7038)"> <p>Madrid, España</p></button>
+            <button onclick="ConsultarPredefinido(41.9028, 12.4964)"> <p>Roma, Italia</p></button>
+            <button onclick="ConsultarPredefinido(52.5200, 13.4050)"> <p>Berlín, Alemania</p></button>
+            <button onclick="ConsultarPredefinido(51.5074, -0.1278)"> <p>Londres, Reino Unido</p></button>
+            <button onclick="ConsultarPredefinido(55.7558, 37.6173)"> <p>Moscú, Rusia</p></button>
+            <button onclick="ConsultarPredefinido(59.3293, 18.0686)"> <p>Estocolmo, Suecia</p></button>
+            <button onclick="ConsultarPredefinido(60.1699, 24.9384)"> <p>Helsinki, Finlandia</p></button>
+
         </div>
     </main>
-    <footer>
+    <footer id="footer">
 
     </footer>
 
